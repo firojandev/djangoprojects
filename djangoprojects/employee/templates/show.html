@@ -20,8 +20,8 @@
         <td>{{ employee.eemail }}</td>
         <td>{{ employee.econtact }}</td>
         <td>
-            <a href="/edit/{{ employee.id }}"><span class="glyphicon glyphicon-pencil" >Edit</span></a>
-            <a href="/delete/{{ employee.id }}">Delete</a>
+            <a class="btn btn-primary" href="/edit/{{ employee.id }}"><span class="glyphicon glyphicon-pencil" >Edit</span></a>
+            <a class="btn btn-danger" href="/delete/{{ employee.id }}">Delete</a>
         </td>
     </tr>
 {% endfor %}
